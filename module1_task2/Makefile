@@ -1,12 +1,12 @@
-build: ## builds the site
+build:	## Builds the site using hugo.
 	hugo > /dev/null 2>&1
 
-clean: ## cleans directory dist
+clean:	## Clean the site's directory
 	rm -fr dist
 
-post: ## post your new post
+post:	## Creates a post using POST_NAME & POST_TITLE.
 	hugo new posts/${POST_NAME}.md
 	sed -i '/title/c\title: "${POST_TITLE}"' content/posts/${POST_NAME}.md
 
-help : ##if helps needed, helps here
+help:	## If helps needed, helps here
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
