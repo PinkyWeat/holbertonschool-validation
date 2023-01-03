@@ -1,4 +1,4 @@
 ---
-title: "Welcome to Awesome Inc"
+title: "Welcome to Awesome Inc."
 draft: true
 ---
