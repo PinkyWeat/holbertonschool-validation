@@ -1,6 +1,7 @@
 help : #if helps needed, helps here
 	@echo "post : post your new post"
 	@echo "clean: clears recursively the directory dist"
+	@echo "build: builds the site"
 
 post: # post your new post
 	hugo new posts/${POST_NAME}.md
