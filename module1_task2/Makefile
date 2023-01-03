@@ -1,7 +1,7 @@
 build: # builds the site
 	hugo > /dev/null 2>&1
 
-clean: # clears directory dist
+clean: # cleans directory dist
 	rm -fr dist
 
 post: # post your new post
