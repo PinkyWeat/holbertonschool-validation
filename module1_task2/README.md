@@ -11,11 +11,15 @@ By going to the following website:
     [gohugo.io](https://gohugo.io/getting-started/quick-start/)
 
 You'll only need to follow the steps and have a basic knowledge of your command line.
+
 --
+
 ## Prerequisites
 
     Linux Fundamentals, Code management with Git, GitHub and the GitFlow pattern
+
 --
+
 ## LifeCycle
 
 > First you `build`

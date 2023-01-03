@@ -10,5 +10,6 @@ post: # post your new post
 
 help : #if helps needed, helps here
 	@echo "post : post your new post"
-	@echo "clean: clears recursively the directory dist"
+	@echo "clean: cleans recursively the directory dist"
 	@echo "build: builds the site"
+	@echo "help: information on commands"
