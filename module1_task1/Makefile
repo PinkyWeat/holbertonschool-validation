@@ -9,3 +9,5 @@ post: # post your new post
 clean: # clears recursively the directory dist
 	rm -fr dist
 
+build: 
+	hugo > /dev/null 2>&1
