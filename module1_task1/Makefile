@@ -1,4 +1,4 @@
-help :
+help : #if helps needed, helps here
 	@echo "post : post your new post"
 	@echo "clean: clears recursively the directory dist"
 
@@ -9,5 +9,5 @@ post: # post your new post
 clean: # clears recursively the directory dist
 	rm -fr dist
 
-build: 
+build: # builds the site
 	hugo > /dev/null 2>&1
