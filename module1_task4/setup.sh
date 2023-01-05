@@ -1,3 +1,4 @@
 sudo apt-get update
-sudo apt-get install -y hugo make curl build-essential
-hugo new site dist
+sudo apt-get install hugo
+sudo apt install make
+make build
