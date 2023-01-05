@@ -1,4 +1,4 @@
 sudo apt-get update
-brew install hugo
-sudo apt install make
+sudo brew install hugo
+sudo apt install build-essential
 make build
