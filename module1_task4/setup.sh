@@ -1,6 +1,5 @@
 sudo apt-get update
-sudo apt install build-essential
-sudo apt install make
-/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
-sudo brew install hugo
+apt-get install -y make wget
+wget https://github.com/gohugoio/hugo/releases/download/v0.79.0/hugo_0.79.0_Linux-64bit.deb
+dpkg -i hugo_0.79.0_Linux-64bit.deb
 make build
