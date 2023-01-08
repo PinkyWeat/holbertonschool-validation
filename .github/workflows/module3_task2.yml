@@ -1,41 +1,41 @@
 name: module3_task2
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 2 * * *"
   push:
 jobs:
   deploy:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-18.04
     steps:
-      - name: Clone the repo
+      - name: Clone the Repo
         uses: actions/checkout@v3
-      - name: Run the setup
-        working-directory: module3_task2
-        run: sudo ./setup.sh
-      - name: Build the site
+      - working-directory: module3_task2
+        run: ./setup.sh
+      - working-directory: module3_task2
+        run: make help
+      - name: Build the server
         working-directory: module3_task2
         run: make build
-      - name: Make a new post
+      - name: Create a post
         working-directory: module3_task2
-        run: make post POST_NAME=kanyewestlover911 POST_TITLE="find god"
-      - name: Find some help
-        working-directory: module3_task2
-        run: make help
-      - name: Clean the site
-        working-directory: module3_task2
-        run: make clean
-      - name: Make the zip files
+        run: make POST_NAME=Taylor_God POST_TITLE="Taylors God" post
+      - name: Use Package
         working-directory: module3_task2
         run: make package
-      - name: Make lint for README.md
+      - name: Use lint
         working-directory: module3_task2
         run: make lint
-      - name: Unit-tests
+      - name: Use unit-test
         working-directory: module3_task2
         run: make unit-tests
-      - name: Integration-tests
+      - name: Use integration-tests
         working-directory: module3_task2
         run: make integration-tests
-      - name: Validate
+      - name: Use validate
         working-directory: module3_task2
         run: make validate
+      - name: Save workflow
+        uses: actions/upload-artifact@v3
+        with:
+          name: artifact-task2
+          path: module3_task2/
