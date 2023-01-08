@@ -17,7 +17,7 @@ jobs:
         run: make build
       - name: Make a new post
         working-directory: module3_task2
-        run: make post POST_NAME=kanyewestlover911 POST_TITLE="find god"
+        run: make post POST_NAME=TaylorLoverxdd POST_TITLE="Find Taylor"
       - name: Find some help
         working-directory: module3_task2
         run: make help
