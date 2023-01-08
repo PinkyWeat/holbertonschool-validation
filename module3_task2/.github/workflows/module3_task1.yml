@@ -7,40 +7,35 @@ jobs:
   deploy:
     runs-on: ubuntu-latest
     steps:
-      - name: git clone
+      - name: Clone the repo
         uses: actions/checkout@v3
-      - name: Install setup
+      - name: Run the setup
         working-directory: module3_task2
         run: sudo ./setup.sh
-      - name: build
+      - name: Build the site
         working-directory: module3_task2
         run: make build
-      - name: post
+      - name: Make a new post
         working-directory: module3_task2
-        run: make post POST_NAME=chori POST_TITLE=pan
-      - name: help
+        run: make post POST_NAME=kanyewestlover911 POST_TITLE="find god"
+      - name: Find some help
         working-directory: module3_task2
         run: make help
-      - name: package
-        working-directory: module3_task2
-        run: make package
-      - name: clean
+      - name: Clean the site
         working-directory: module3_task2
         run: make clean
-      - name: lint
+      - name: Make the zip files
+        working-directory: module3_task2
+        run: make package
+      - name: Make lint for README.md
         working-directory: module3_task2
         run: make lint
-      - name: unit-tests
+      - name: Unit-tests
         working-directory: module3_task2
         run: make unit-tests
-      - name: integration-tests
+      - name: Integration-tests
         working-directory: module3_task2
         run: make integration-tests
-      - name: validate
+      - name: Validate
         working-directory: module3_task2
         run: make validate
-      - name: arti
-        uses: actions/upload-artifact@v3
-        with:
-          name: line
-          path: module3_task2/
