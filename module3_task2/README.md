@@ -26,6 +26,11 @@ You'll only need to follow the steps and have a basic knowledge of your command 
 > Then you also have `clean`
 > You may also `post`
 > And if you need it, you have `help`
+> We also have `lint`
+> `package`
+> `uni-tests`
+> `integration-tests`
+> `validate`
 
 ---
 
@@ -34,9 +39,6 @@ You'll only need to follow the steps and have a basic knowledge of your command 
 > Has the workflows *// Under Construction Site//*
 
 ---
-
-# unit-tests 
---
 
 ## Author
 
