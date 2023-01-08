@@ -9,4 +9,4 @@ post:	## Creates a post using POST_NAME & POST_TITLE.
 	sed -i '/title/c\title: "${POST_TITLE}"' content/posts/${POST_NAME}.md
 
 help:	## If helps needed, helps here
-	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
+	@sed -ne '/@sed/!s/## //p' ${MAKEFILE_LIST}
