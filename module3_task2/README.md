@@ -14,22 +14,23 @@ You'll only need to follow the steps and have a basic knowledge of your command 
 
 --
 
-## Prerequisites
+##Prerequisites
 
-    Linux Fundamentals, Code management with Git, GitHub and the GitFlow pattern
+Go-Hugo, Make, Hugo, GNU Make version 3.81 or 4.0
 
 --
 
-## LifeCycle
+##Lifecycle
 
-> First you `build`
-- Then you also have `clean`
--  You may also `post`
--  And if you need it, you have `help`
-- We also have `lint`
-- package
-- integration-tests
-- validate
+* build
+* clean
+* post
+* help
+* lint
+* package
+* unit-tests
+* integration-tests
+* validate
 
 ---
 
