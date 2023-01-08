@@ -9,7 +9,7 @@ post: ## Creates a post with given POST_NAME and POST_TITLE.
 	sed -i '/title/c\title: "${POST_TITLE}"' content/posts/${POST_NAME}.md
 
 package: ## produces a file awesome-website.zip, containing the binary awesome-api and the directory dist
-		zip -r awesome-website.zip dist
+		zip -r awesome-website.zip . -i dist
 
 lint: ## update files README.md and DEPLOY.md to markdownlint
 	markdownlint --fix DEPLOY.md
