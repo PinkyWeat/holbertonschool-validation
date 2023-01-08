@@ -17,8 +17,8 @@ package: ## produces a file awesome-website.zip, containing the binary awesome-a
 lint: ## update files README.md and DEPLOY.md to markdownlint
 	markdownlint --fix DEPLOY.md
 
-unit-tests: ## ERROR: No comment found for target unit-tests in ./Makefile
+unit-tests: ## ERROR: No comment found for target unit-tests in ./README
 
-integration-tests: ## ERROR: No comment found for target integration-tests in ./Makefile
+integration-tests: ## ERROR: No comment found for target integration-tests in ./README
 
 validate: ## ERROR: No comment found for target validate in ./Makefile
