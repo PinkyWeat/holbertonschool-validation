@@ -1,7 +1,7 @@
 name: module3_task2
 on:
   schedule:
-    - cron: "0 0 * * *"
+    - cron: "0 * * * *"
   push:
 jobs:
   deploy:
