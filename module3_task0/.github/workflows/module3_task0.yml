@@ -4,7 +4,7 @@ on:
     - cron: "0 10 * * *"
   push:
 jobs:
-  on_push:
+  deploy:
     runs-on: ubuntu-latest
     steps:
       - name: Clone the repo
