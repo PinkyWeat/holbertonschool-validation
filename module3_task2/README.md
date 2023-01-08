@@ -23,14 +23,14 @@ You'll only need to follow the steps and have a basic knowledge of your command 
 ## LifeCycle
 
 > First you `build`
-> Then you also have `clean`
-> You may also `post`
-> And if you need it, you have `help`
-> We also have `lint`
-> `package`
-> `uni-tests`
-> `integration-tests`
-> `validate`
+- Then you also have `clean`
+-  You may also `post`
+-  And if you need it, you have `help`
+- We also have `lint`
+- package
+- uni-tests
+- integration-tests
+- validate
 
 ---
 
