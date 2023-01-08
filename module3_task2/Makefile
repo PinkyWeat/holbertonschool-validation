@@ -9,12 +9,12 @@ post: ## Creates a post with given POST_NAME and POST_TITLE.
 	sed -i '/title/c\title: "${POST_TITLE}"' content/posts/${POST_NAME}.md
 
 package: ## produces a file awesome-website.zip, containing the binary awesome-api and the directory dist
-		zip -r awesome-website.zip dist/ awesome-api
+	zip -r awesome-website.zip dist/ awesome-api
 
 lint: ## update files README.md and DEPLOY.md to markdownlint
 	markdownlint --fix DEPLOY.md
 
-help: ## if helps needed, helps here
+help: ## shows commands
 	@fgrep -h "##" $(MAKEFILE_LIST) | fgrep -v fgrep | sed -e 's/\\$$//' | sed -e 's/##//'
 
 unit-tests: ## ERROR: No comment found for target unit-tests in ./Makefile
